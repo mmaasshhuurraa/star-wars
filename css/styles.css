@@ -2,6 +2,7 @@
     --theme-accent :#FFC700;
     --theme-main :#FFFFFF;
     --theme-bgd: #222527;
+    --theme-modal-bgd: #E5E5E5
 }
 
 html, body {
@@ -171,4 +172,185 @@ header {
     font-size: 16px;
     line-height: 24px;
     color: var(--theme-main);
+}
+
+.codex {
+    padding: 186px 0;
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.codex .container {
+    flex-direction: row;
+}
+
+.codex-motto {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 60px;
+    color: var(--theme-accent);
+}
+
+.codex-left-side, .codex-right-side {
+    width: 50%;
+}
+
+.codex-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-accent);
+    margin-bottom:32px;
+}
+
+.codex-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-main);
+    margin-bottom:4px;
+}
+
+.codex-text-warning {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-main);
+    margin-top: 60px;
+}
+
+.footer {
+    background-color: var(--theme-bgd);
+    padding: 60px 0 66px 0;
+}
+
+.footer .container {
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--theme-main);
+    margin-bottom: 38px;
+}
+
+.footer svg {
+    fill: var(--theme-accent);
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-modal-bgd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3 ease-in-out;
+}
+
+.modal-form {
+    padding: 40px 80px;
+    background-color: var(--theme-bgd);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal-form-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-accent);
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.modal-form-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--theme-main);
+    margin-bottom: 32px;
+}
+
+.modal-form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.modal-form-field-label {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    color: var(--theme-main);
+}
+
+.modal-form-name, .modal-form-email {
+    width: 440px;
+    height: 40px;
+    border: 1px solid var(--theme-main);
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.modal-form-submit {
+    border: 0;
+    outline: 0;
+    padding: 16px 32px 16px 32px;
+    background-color: var(--theme-accent);
+    border-radius: 38px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-success {
+    padding: 80px 40px 88px 40px;
+    background-color: var(--theme-bgd);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+.modal-success-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-accent);
+    margin-bottom: 112px;
+    text-align: center;
+}
+
+.modal-success-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--theme-main);
+    margin-bottom: 36px;
 }
