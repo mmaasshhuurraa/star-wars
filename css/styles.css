@@ -5,6 +5,8 @@
     --theme-modal-bgd: rgb(239 236 236 / 90%);
 
     --theme-btn-text: #060803;
+
+    --theme-motto-text: #FFFFFF;
 }
 
 html, body {
@@ -108,7 +110,7 @@ header {
 }
 
 .about-description {
-    color: var(--theme-main);
+    color: var(--theme-motto-text);
     font-size: 16px;
     line-height: 24px;
 }
